@@ -109,3 +109,37 @@ body, .leaflet-container {
 .leaflet-bar a, .leaflet-bar a:hover {
   color: #635420;
 }
+
+/* --- Adresse et « Comment y aller » --- */
+.acces {
+  margin: -10px 40px 10px;
+  text-align: left;
+  font-size: 11pt;
+  line-height: 1.5;
+}
+.acces-adresse {
+  display: block;
+  color: #333333;
+  margin-bottom: 8px;
+}
+.acces-adresse i { color: #635420; margin-right: 4px; }
+a.acces-lien, a.acces-lien:visited {
+  display: inline-block;
+  background: #635420;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+a.acces-lien:hover, a.acces-lien:focus { background: #E8BE07; color: #635420 !important; }
+a.acces-lien i { margin-right: 6px; }
+
+/* --- Bouton « Ma position » --- */
+.ma-position a { font-size: 15px; color: #635420; }
+.ma-position.actif a { background: #E8BE07; color: #635420; }
+.ma-position-erreur {
+  position: absolute; left: 50%; bottom: 30px; transform: translateX(-50%);
+  z-index: 1000; background: #635420; color: #FFFFFF;
+  padding: 8px 14px; border-radius: 4px; font-size: 10pt;
+}
