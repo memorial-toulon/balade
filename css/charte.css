@@ -1,0 +1,111 @@
+/* ==========================================================
+   Charte graphique du Mémorial du Mont Faron
+   Couleurs : #E8BE07 (jaune) et #635420 (brun) – Police : Marianne
+   ========================================================== */
+
+/* Police Marianne (système de design de l'État) */
+@font-face { font-family: "Marianne"; font-weight: 400; font-style: normal; font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/fonts/Marianne-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Marianne"; font-weight: 400; font-style: italic; font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/fonts/Marianne-Regular_Italic.woff2") format("woff2"); }
+@font-face { font-family: "Marianne"; font-weight: 500; font-style: normal; font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/fonts/Marianne-Medium.woff2") format("woff2"); }
+@font-face { font-family: "Marianne"; font-weight: 700; font-style: normal; font-display: swap;
+  src: url("https://cdn.jsdelivr.net/npm/@gouvfr/dsfr@1.15.4/dist/fonts/Marianne-Bold.woff2") format("woff2"); }
+
+body, .leaflet-container {
+  font-family: "Marianne", Arial, sans-serif;
+  color: #333333;
+}
+
+/* --- En-tête (titre et sous-titre) --- */
+#title {
+  background-color: #FFFFFF;
+  border-bottom: 4px solid #E8BE07;
+  box-sizing: border-box;
+  padding: 10px 20px 10px;
+}
+#header {
+  padding-top: 0 !important;
+}
+#top {
+  height: 90px !important;
+}
+#header h1 {
+  font-family: "Marianne", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.4em;
+  line-height: 1.2;
+  color: #635420;
+  margin: 0 0 6px;
+}
+#header h2 {
+  font-family: "Marianne", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.95em;
+  line-height: 1.35;
+  color: #333333;
+  margin: 0;
+  overflow-wrap: break-word;
+}
+#header h2 small {
+  display: inline-block;
+  margin-top: 6px;
+  color: #635420;
+  font-weight: 500;
+}
+
+/* --- Chapitres --- */
+.chapter-header {
+  font-family: "Marianne", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #635420;
+  padding: 0 20px;
+}
+.description {
+  font-size: 12pt;
+  line-height: 1.55;
+  color: #333333;
+}
+.description a, .description a:visited {
+  color: #635420;
+  font-weight: 500;
+}
+.in-focus {
+  border-left: 6px solid #E8BE07;
+}
+.source, a.source:visited {
+  color: #635420;
+}
+
+/* Barre de séparation carte / texte sur téléphone */
+#map {
+  border-bottom-color: #E8BE07;
+}
+
+/* --- Marqueurs : brun avec contour jaune, actif en jaune --- */
+.leaflet-marker-icon {
+  opacity: 1;
+}
+.leaflet-marker-icon.extra-marker {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='46' viewBox='0 0 35 46'%3E%3Cpath d='M17.5 1.5C8.6 1.5 2 8.3 2 16.9 2 28.2 17.5 44.5 17.5 44.5S33 28.2 33 16.9C33 8.3 26.4 1.5 17.5 1.5Z' fill='%23635420' stroke='%23E8BE07' stroke-width='2.5'/%3E%3C/svg%3E") no-repeat center / 35px 46px !important;
+}
+.leaflet-marker-icon.extra-marker i {
+  color: #FFFFFF;
+  font-family: "Marianne", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+}
+.leaflet-marker-icon.extra-marker.marker-active {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='35' height='46' viewBox='0 0 35 46'%3E%3Cpath d='M17.5 1.5C8.6 1.5 2 8.3 2 16.9 2 28.2 17.5 44.5 17.5 44.5S33 28.2 33 16.9C33 8.3 26.4 1.5 17.5 1.5Z' fill='%23E8BE07' stroke='%23635420' stroke-width='2.5'/%3E%3C/svg%3E") no-repeat center / 35px 46px !important;
+}
+.leaflet-marker-icon.extra-marker.marker-active i {
+  color: #635420;
+}
+
+/* Boutons de zoom */
+.leaflet-bar a, .leaflet-bar a:hover {
+  color: #635420;
+}
