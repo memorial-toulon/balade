@@ -1,0 +1,22 @@
+Setting,Customize,Hints
+Storymap Info,,"For help, see tutorial in HandsOnDataViz.org"
+Storymap Title,Sur les traces de la déportation à Toulon,
+Storymap Subtitle,Balade mémorielle guidée – Mémorial du Débarquement et de la Libération en Provence<br><small>Faites défiler <i class='fa fa-chevron-down'></i></small>,"Add your subtitle, or delete that portion"
+Storymap Logo,,Path to a logo image
+Google Analytics Tracking ID,,Sample format: UA-5488840-29
+Map Settings,,"For help, see tutorial in HandsOnDataViz.org"
+Basemap Tiles,CartoDB.Positron,Select basemap
+Basemap Tiles API Key,cb1_3z9t_1_fa5739ab00708764b9cdcc96,"If required, get your own API key to display basemap tiles"
+Zoom Controls,bottomright,
+Narrative Background Color,#FFFFFF,
+Narrative Text Color,#333333,
+Narrative Link Color,#635420,
+Active Chapter Background Color,#FBF2CC,
+Media Container Height,300,"Maximum height of the image, in pixels. 200 is default."
+Pixels After Final Chapter,600,In pixels. At least 100
+Enable Lightbox for Images,yes,yes or no
+Credits,,"For help, see tutorial in HandsOnDataViz.org"
+Author Name,Projet Réaco 2026-2027 – Mémorial du Mont Faron,"Appears in map credits as ""View data by..."" (or leave blank)"
+Author Email or Website,mailto:mediation.montfaron@onacvg.fr,Create link in Author Name by inserting your email or web address (or leave blank)
+Author GitHub Repo Link,https://github.com/memorial-toulon,"Insert your code repo URL to appear as link in ""View code..."" (or leave blank)"
+Code Credit,"<a href=""https://handsondataviz.org"">HandsOnDataViz</a>","Appears in credits as ""...code by..."" (or leave blank)"
