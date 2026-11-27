@@ -262,6 +262,16 @@ $(window).on('load', function() {
         .append(media ? source : '')
         .append('<p class="description">' + c['Description'] + '</p>');
 
+      // Adresse + lien « Comment y aller » (itinéraire à pied dans Google Maps)
+      if (c['Marker'] !== 'Hidden' && !isNaN(parseFloat(c['Latitude'])) && !isNaN(parseFloat(c['Longitude']))) {
+        var itineraire = 'https://www.google.com/maps/dir/?api=1&travelmode=walking&destination='
+          + parseFloat(c['Latitude']) + ',' + parseFloat(c['Longitude']);
+        container.append('<p class="acces">'
+          + (c['Location'] ? '<span class="acces-adresse"><i class="fa fa-map-marker-alt"></i> ' + c['Location'] + '</span>' : '')
+          + '<a class="acces-lien" href="' + itineraire + '" target="_blank" rel="noopener">'
+          + '<i class="fa fa-walking"></i> Comment y aller</a></p>');
+      }
+
       $('#contents').append(container);
 
     }
